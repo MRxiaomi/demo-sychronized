@@ -1,4 +1,60 @@
-ds
-wsa
-sdax
-sax
+1
+ByteBuffer header = ByteBuffer.allocate(128);
+2
+ByteBuffer body   = ByteBuffer.allocate(1024);
+3
+
+4
+ByteBuffer[] bufferArray = { header, body };
+5
+
+6
+channel.read(bufferArray);
+1
+ByteBuffer header = ByteBuffer.allocate(128);
+2
+ByteBuffer body   = ByteBuffer.allocate(1024);
+3
+
+4
+ByteBuffer[] bufferArray = { header, body };
+5
+
+6
+channel.read(bufferArray);
+1
+ByteBuffer header = ByteBuffer.allocate(128);
+2
+ByteBuffer body   = ByteBuffer.allocate(1024);
+3
+
+4
+ByteBuffer[] bufferArray = { header, body };
+5
+
+6
+channel.read(bufferArray);
+1
+ByteBuffer header = ByteBuffer.allocate(128);
+2
+ByteBuffer body   = ByteBuffer.allocate(1024);
+3
+
+4
+ByteBuffer[] bufferArray = { header, body };
+5
+
+6
+channel.read(bufferArray);
+1
+ByteBuffer header = ByteBuffer.allocate(128);
+2
+ByteBuffer body   = ByteBuffer.allocate(1024);
+3
+
+4
+ByteBuffer[] bufferArray = { header, body };
+5
+
+6
+channel.read(bufferArray);
