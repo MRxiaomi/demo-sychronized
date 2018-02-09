@@ -10,7 +10,7 @@ import java.nio.channels.SocketChannel;
 public class SocketChannelDemo {
     public static void main(String[] args) throws Exception {
         SocketChannel socketChannel = SocketChannel.open();
-        socketChannel.connect(new InetSocketAddress("192.168.200.244", 80));
+        socketChannel.connect(new InetSocketAddress(9999));
 
 
 
@@ -22,7 +22,7 @@ public class SocketChannelDemo {
             buf.flip();
             while(buf.hasRemaining()){
                 //4.读取之前写入到buffer的所有数据
-                System.out.print((char) buf.get());
+                System.out.print("---"+(char) buf.get());
             }
         //}
 
