@@ -1,9 +1,11 @@
 package com.example.demo;
 
-import com.example.demo.servcie.ConfigurationTestService;
-import com.example.demo.useservice.UseConfigurationTestService;
+import com.example.demo.configuration.servcie.ConfigurationTestService;
+import com.example.demo.configuration.useservice.UseConfigurationTestService;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 /**
  * Created by liuyumeng on 2018/2/9.
@@ -12,6 +14,8 @@ import org.springframework.context.annotation.Configuration;
  * 2.
  */
 @Configuration
+@ComponentScan("com.example.demo")
+@EnableAspectJAutoProxy
 public class GlobalConfiguration {
     //ConfigurationTestService-使用功能类的Bean
     @Bean

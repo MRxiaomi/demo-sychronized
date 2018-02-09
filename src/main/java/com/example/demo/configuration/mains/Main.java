@@ -1,7 +1,7 @@
-package com.example.demo.mains;
+package com.example.demo.configuration.mains;
 
 import com.example.demo.GlobalConfiguration;
-import com.example.demo.servcie.ConfigurationTestService;
+import com.example.demo.configuration.servcie.ConfigurationTestService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**

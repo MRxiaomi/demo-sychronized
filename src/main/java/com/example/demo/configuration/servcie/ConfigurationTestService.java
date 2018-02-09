@@ -1,4 +1,4 @@
-package com.example.demo.servcie;
+package com.example.demo.configuration.servcie;
 
 /**
  * Created by liuyumeng on 2018/2/9.

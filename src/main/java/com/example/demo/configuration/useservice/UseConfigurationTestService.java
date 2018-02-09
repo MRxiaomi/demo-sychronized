@@ -1,6 +1,6 @@
-package com.example.demo.useservice;
+package com.example.demo.configuration.useservice;
 
-import com.example.demo.servcie.ConfigurationTestService;
+import com.example.demo.configuration.servcie.ConfigurationTestService;
 
 /**
  * Created by liuyumeng on 2018/2/9.
