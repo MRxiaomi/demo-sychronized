@@ -1,1 +1,3 @@
+## @EnableAutoConfiguration引入了AutoConfigurationImportSelector,使用SpringFactoriesLoader.loadFactories扫描具有spring.factories的包，
+## 可以全局搜一下 spring.factories
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.example.demo.GlobalConfiguration
