@@ -1,7 +1,7 @@
 package com.example.demo.jsr133;
 
 /**
- * Created by liuyumeng on 2018/3/29.
+ * Created by liuyumeng on 2018/3/28.
  * <p>
  * 一个简单的展示Happen-Before的例子.
  * 这里有两个共享变量:a和flag,初始值分别为0和false.在ThreadA中先给     a=1,然后flag=true.
