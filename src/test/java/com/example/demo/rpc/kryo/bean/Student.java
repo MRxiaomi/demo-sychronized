@@ -1,4 +1,4 @@
-package com.example.demo.rpc.jaua.bean;
+package com.example.demo.rpc.kryo.bean;
 
 import java.io.Serializable;
 
