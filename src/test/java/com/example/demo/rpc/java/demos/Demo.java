@@ -1,6 +1,6 @@
-package com.example.demo.rpc;
+package com.example.demo.rpc.java.demos;
 
-import com.example.demo.rpc.jaua.bean.Student;
+import com.example.demo.rpc.java.bean.Student;
 
 import java.io.*;
 
@@ -22,7 +22,7 @@ public class Demo {
                 objectInputStream.close();
 
                 //不要在断言里写业务代码
-                assert "java序列化1".equals(student.getName()):"不相等";
+                assert "java序列化".equals(student.getName()):"不相等";
             } catch (ClassNotFoundException e) {
                 e.printStackTrace();
             }
