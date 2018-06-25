@@ -1,6 +1,7 @@
 package com.example.demo.java8.stream;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -54,7 +55,20 @@ public class Operator {
 
         System.out.println("===============");
         //map to int
-        System.out.println(students.stream().filter((x)->x.getAge()>=23).mapToInt(Student::getAge).sum());
+        System.out.println(students.stream().filter((x) -> x.getAge() >= 23).mapToInt(Student::getAge).sum());
+
+        System.out.println("===============");
+        //****** flat map ******
+        //flatMap与map的区别在于 flatMap是将一个流中的每个值都转成一个个流，然后再将这些流扁平化成为一个流
+        String[] strs = {"java8", "is", "easy", "to", "use"};
+        Arrays.stream(strs)
+                .map(str -> str.split(""))  // 映射成为Stream<String[]>
+                .flatMap(Arrays::stream)  // 扁平化为Stream<String>
+                .distinct()
+                .collect(Collectors.toList())
+                .forEach(System.out::println);
+
+
     }
 
     // 初始化
