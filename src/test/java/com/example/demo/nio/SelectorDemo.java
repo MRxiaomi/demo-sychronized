@@ -38,7 +38,6 @@ public class SelectorDemo {
         socketChannel3.register(selector, SelectionKey.OP_READ);
         socketChannel3.connect(new InetSocketAddress("192.168.200.244", 80));
 
-
         //todo 这里为什么一直接取不到？
         if (selector.select() > 0) {
             Set keys = selector.selectedKeys();

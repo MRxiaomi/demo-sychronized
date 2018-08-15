@@ -13,7 +13,7 @@ public class FileChannelDemo {
         FileChannel inChannel = aFile.getChannel();
 
         //1.create buffer with capacity of 48 bytes
-        ByteBuffer buf = ByteBuffer.allocate(48);
+        ByteBuffer buf = ByteBuffer.allocateDirect(48);
 
         //2.写入数据到buffer
         int bytesRead = inChannel.read(buf);

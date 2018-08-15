@@ -1,7 +1,14 @@
 package com.example.demo.collections;
 
+import java.util.HashMap;
+
 /**
- * Created by liuyumeng on 2018/7/18.
+ * @author liuyumeng
  */
 public class HashMapDemo {
+    public static void main(String[] args) {
+        HashMap<Integer, Object> hashMap = new HashMap<>(2);
+        hashMap.put(1, 1);
+        hashMap.put(3, 3);
+    }
 }

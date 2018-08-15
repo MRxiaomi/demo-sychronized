@@ -46,5 +46,4 @@ public class LogAspect {
         Method method = signature.getMethod();
         System.out.println(method.getName());
     }
-
 }
