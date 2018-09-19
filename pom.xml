@@ -106,6 +106,13 @@
 			<artifactId>guava</artifactId>
 			<version>23.0</version>
 		</dependency>
+
+		<!-- json dependency -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>LATEST</version>
+		</dependency>
 	</dependencies>
 
 	<build>
