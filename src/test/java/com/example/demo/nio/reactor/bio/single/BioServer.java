@@ -1,4 +1,4 @@
-package com.example.demo.nio.reactor.bio;
+package com.example.demo.nio.reactor.bio.single;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -9,14 +9,16 @@ import java.nio.charset.Charset;
 
 /**
  * @author liuyumeng
- *         <p>
+ *
  *         单线程模型
- *         <p>
+ *
  *         仅有一个线程
- *         <p>
+ *
  *         只能处理一个请求
- *         <p>
+ *
  *         无法利用多核优势
+ *
+ *
  */
 public class BioServer implements Runnable {
     private int port;
