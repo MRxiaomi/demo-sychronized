@@ -10,19 +10,17 @@ import java.util.concurrent.Executors;
 /**
  * @author liuyumeng
  *
- * BIO多线程模型
+ * BIO线程池模型
  *
  * 主线程维护连接
  *
- * 具体读写操作创建单独线程处理
+ * 具体读写操作使用线程池完成
  *
  * 能够利用多核优势
  *
  * 缺点：
  *      1.同步阻塞IO,读写阻塞，线程等待时间长
- *      2.有连接限制，为CPU数目
- *      3.多线程上下文切换：每次都会创建一个新的线程
- *      4.共享数据需要并发控制
+ *      2.共享数据需要并发控制
  */
 public class BioServer implements Runnable {
     private int port;
