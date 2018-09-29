@@ -128,7 +128,7 @@ public class Reactor implements Runnable {
             System.out.println("写操作...");
             //下一步处理读事件
             //selectionKey.interestOps(SelectionKey.OP_READ);
-            socketChannel.register(selector, SelectionKey.OP_READ);
+            socketChannel.register(selector, SelectionKey.OP_CONNECT);
             this.state = READING;
         }
 
