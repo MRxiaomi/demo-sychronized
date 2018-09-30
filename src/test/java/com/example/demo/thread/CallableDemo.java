@@ -18,6 +18,12 @@ public class CallableDemo implements Callable {
     }
 
     public static void main(String[] args) {
+        //testFutureTask();
+
+        testFutureTask2();
+    }
+
+    private static void testFutureTask(){
         ExecutorService executorService = Executors.newFixedThreadPool(2);
         FutureTask<Integer> futureTask = new FutureTask<Integer>(new CallableDemo());
         executorService.submit(futureTask);
@@ -30,6 +36,21 @@ public class CallableDemo implements Callable {
         } catch (ExecutionException e) {
             e.printStackTrace();
         }
+    }
 
+    /**
+     * runnable和Callable之间可以通过RunnableFuture相互转换，FutureTask是其实现类
+     */
+    private static void testFutureTask2(){
+        ExecutorService executorService = Executors.newFixedThreadPool(2);
+        FutureTask<Integer> futureTask = new FutureTask<Integer>(new CallableDemo());
+        executorService.execute(futureTask);
+        try {
+            futureTask.get();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
     }
 }
