@@ -3,3 +3,5 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
 com.example.demo.GlobalConfiguration,\
 com.example.demo.AutoConfiguration
+
+org.springframework.boot.autoconfigure.web.ServerProperties.Tomcat
