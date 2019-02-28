@@ -133,6 +133,12 @@
 			<artifactId>hystrix-javanica</artifactId>
 			<version>1.5.9</version>
 		</dependency>
+
+		<dependency>
+			<groupId>com.lmax</groupId>
+			<artifactId>disruptor</artifactId>
+			<version>3.4.2</version>
+		</dependency>
 	</dependencies>
 
 	<build>

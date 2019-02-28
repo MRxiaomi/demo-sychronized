@@ -41,15 +41,12 @@ public class BioServer implements Runnable {
             while (true) {
                 //连接操作
                 java.net.Socket socket = serverSocket.accept();
-
                 //read操作
                 InputStream inputStream = socket.getInputStream();
-
                 System.out.println("输入...");
                 //write操作
                 OutputStream outputStream = socket.getOutputStream();
                 System.out.println("输出...");
-
                 outputStream.write("abc".getBytes(Charset.forName("UTF-8")));
             }
         } catch (IOException e) {

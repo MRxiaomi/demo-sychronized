@@ -41,7 +41,7 @@ public class GlobalConfiguration {
         return useConfigurationTestService;
     }
 
-    @Bean
+    //@Bean
     //@ConditionalOnMissingBean(value = EmbeddedServletContainerFactory.class)
     public EmbeddedServletContainerFactory embeddedServletContainerFactory() {
         TomcatEmbeddedServletContainerFactory factory = new TomcatEmbeddedServletContainerFactory();
@@ -67,7 +67,7 @@ public class GlobalConfiguration {
 
     private AccessLogValve getLogAccessLogValue() {
         AccessLogValve accessLogValve = new AccessLogValve();
-        accessLogValve.setDirectory("d:/tmp/logs");
+        accessLogValve.setDirectory("/tmp/logs");
         accessLogValve.setEnabled(true);
         accessLogValve.setPattern(Constants.AccessLog.COMMON_PATTERN);
         accessLogValve.setPrefix("SpringBoot-Access-Log");
